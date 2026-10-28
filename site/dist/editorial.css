@@ -1,0 +1,80 @@
+/* Original editorial direction. Fonts distributed under SIL OFL, served locally. */
+@font-face{font-family:Space;src:url('/assets/fonts/SpaceGrotesk[wght].ttf') format('truetype');font-weight:300 700;font-display:swap}
+@font-face{font-family:Barlow;src:url('/assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:Instrument;src:url('/assets/fonts/InstrumentSerif-Italic.ttf') format('truetype');font-style:italic;font-display:swap}
+.v2{font-family:Space,Arial,sans-serif;background:#100e0e}
+.scene.hero{background:#140c0c;min-height:820px}
+.scene::after{display:none;background-image:none}
+.scene-back{inset:-15% 0; background:radial-gradient(ellipse at 12% 40%,#ff6c2e 0%,#e54716 15%,#b51e17 30%,transparent 58%),radial-gradient(ellipse at 100% 85%,#c92d18 0%,#571217 32%,transparent 65%),#170d10}
+.scene-glow{inset:0;background:radial-gradient(ellipse at 52% 40%,#160b1499,transparent 65%)}
+.scene-grid{display:none}.ghost-word{opacity:.3;top:65%;-webkit-text-stroke:1px #ffb59055}
+.scene .hero-copy{padding-bottom:65px}.hero-label{font-family:Space,Arial,sans-serif;letter-spacing:.15em;font-weight:500;font-size:11px}
+.live-dot{background:#f6f1e7;box-shadow:none}
+.scene h1{display:block;line-height:.84;letter-spacing:-.025em;font-weight:600;font-size:clamp(90px,10.4vw,155px)}
+.scene h1 .title-first{display:block;font-family:Barlow,Impact,sans-serif;text-transform:uppercase;font-weight:600;letter-spacing:-.015em}
+.scene h1 em{display:block;font-family:Instrument,Georgia,serif;font-weight:400;font-style:italic;color:#fff1de;letter-spacing:-.045em;font-size:1.14em;line-height:1.02;margin-top:-.015em}
+.editorial-dot{color:#ff8649}
+.changing-line{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px auto 0;color:#f9dacb;font-size:16px;line-height:1.5}
+.changing-word{display:inline-block;min-width:100px;text-align:left;color:#fff5e7;font-weight:600}
+.motion-toggle{border:1px solid #fff5e755;background:transparent;color:#fff5e7;width:28px;height:28px;border-radius:50%;padding:0;font:11px Space,Arial,sans-serif;cursor:pointer}
+.motion-toggle:hover{background:#fff5e722}
+.scene .hero-copy>p{font-size:15px;color:#f7e6dc;max-width:510px;margin:20px auto 26px}
+.hero-secondary{font-size:13px}.orange-pill{background:#f6f1e7;color:#20100b}.orange-pill span{background:#c93618;color:#fff5e7}
+.hero-orbit{opacity:.6;left:-120px;top:30px}.hero-spark{width:125px;top:13%;right:6%;filter:none;opacity:.8}.hero-spark svg{fill:#ffac79}
+.floating-note{width:170px;left:5%;bottom:70px}.floating-note strong{font-family:Barlow,Impact,sans-serif;font-weight:600;font-size:28px;letter-spacing:0}.hero-object{width:135px;height:135px;bottom:100px}.object-face{height:125px;font-size:90px}
+.scene .hero-bottom,.scene .hero-bottom a{font-family:Space,Arial,sans-serif;color:#f2caba;font-size:9px}
+.v2 .ticker{font-family:Barlow,Impact,sans-serif;font-weight:600;font-size:22px;letter-spacing:.07em;padding:14px 20px;background:#ef4d25}
+.v2 h2,.panel-copy h3{font-family:Barlow,Impact,sans-serif;font-weight:600;letter-spacing:-.02em!important}
+.v2 .intro h2,.v2 .section-head h2{font-size:clamp(48px,6vw,86px);line-height:1}
+.v2 h2 .orange,.outline-word,.contact h2 span{font-family:Instrument,Georgia,serif;font-style:italic;font-weight:400;letter-spacing:-.035em}
+.eyebrow,.art-kicker,.art-footer,.panel-index,.panel-tags span,.connection-caption,.search-query,.signal-label{font-family:Space,Arial,sans-serif;font-weight:500}
+.eyebrow{font-size:11px;letter-spacing:.14em}.art-kicker{font-size:10px}.panel-tags span{font-size:9px;letter-spacing:.06em}
+.panel-copy h3{font-size:clamp(48px,4.6vw,66px)}.panel-copy .panel-lead{font-family:Instrument,Georgia,serif;font-size:30px;line-height:1.1;letter-spacing:-.015em}
+.panel-copy>p:not(.panel-lead){font-size:15px}.work-panel{border-radius:4px}.panel-copy{padding:40px 46px}
+.work-google .panel-art{background:#dfd7c9}.work-google{background:#f0e9dd}
+.v2 .manifesto{border-radius:0;background:linear-gradient(115deg,#f96c2e,#e64020)}
+.v2 .manifesto>.wrap>p{font-family:Barlow,Impact,sans-serif;font-weight:600;letter-spacing:-.02em;line-height:1.03}.v2 .manifesto>.wrap>p>span{font-family:Instrument,Georgia,serif;font-weight:400;font-style:italic}
+.v2 .name-art strong{font-family:Arial,Helvetica,sans-serif}.v2 .about h2,.v2 .contact h2{font-size:clamp(48px,5vw,74px)}
+@media(max-width:1100px){.floating-note{left:3%;width:140px}.floating-note strong{font-size:24px}.hero-object{right:4%;width:110px}.object-face{height:105px;font-size:80px}.scene h1{font-size:12vw}}
+@media(max-width:700px){.scene.hero{min-height:860px;padding:150px 0 245px}.scene .hero-copy{padding:0 20px}.scene h1{font-size:clamp(65px,15vw,105px);letter-spacing:-.02em}.scene h1 em{font-size:1.07em}.hero-label{font-size:8px;margin-bottom:30px;letter-spacing:.1em}.changing-line{font-size:14px;margin-top:20px;gap:8px}.changing-word{min-width:90px}.scene .hero-copy>p{font-size:14px;max-width:330px;line-height:1.65;margin:20px auto 24px}.hero-spark{width:70px;right:22px;top:36px}.hero-orbit{width:160px;height:160px;left:-65px;top:0}.floating-note{left:27px;bottom:60px;width:130px}.floating-note strong{font-size:23px}.hero-object{width:95px;right:30px;bottom:100px}.object-face{height:90px;font-size:70px}.v2 .ticker{font-size:17px;padding:20px 12px}.v2 .intro h2,.v2 .section-head h2{font-size:52px}.panel-copy{padding:28px}.panel-copy h3{font-size:48px}.panel-copy .panel-lead{font-size:29px}.panel-copy>p:not(.panel-lead){font-size:14px}.art-kicker{font-size:8px}.panel-tags span{font-size:8px}.v2 .about h2,.v2 .contact h2{font-size:50px}.v2 .manifesto>.wrap>p{font-size:56px}.hero-secondary{font-size:12px}.scene .hero-bottom,.scene .hero-bottom a{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.motion-toggle{display:none}.changing-word{animation:none!important}}
+
+@media(max-width:700px){.scene.hero{min-height:960px}}
+
+/* Glass navigation and a continuous warm editorial rhythm. */
+.v2 .header{position:sticky;top:0;z-index:70;width:100%;margin:0;padding-inline:max(40px,calc((100% - 1280px)/2));background:#190f10c7;border-bottom:1px solid #fff1df20;border-radius:0;backdrop-filter:blur(18px) saturate(125%);-webkit-backdrop-filter:blur(18px) saturate(125%);transition:transform .32s ease,background .32s;transform:translateY(0)}
+.v2 .header.header-away{transform:translateY(calc(-100% - 2px));pointer-events:none}
+.v2 .header:focus-within{transform:translateY(0);pointer-events:auto}
+.v2 .header #mobile-nav{top:100%;right:16px;background:#211314f5;backdrop-filter:blur(18px);border-radius:0}
+.torus{box-shadow:16px 22px 0 #692b16,22px 30px 32px #0005;background:transparent;border-color:#eb6228}
+.floating-note{bottom:110px}
+.changing-line{gap:0}.changing-word{min-width:0;text-align:center}
+.v2 .ticker{margin-top:calc(-1.4vw - 10px);isolation:isolate}
+.scene .hero-bottom{bottom:55px}
+.journey{position:relative;background:radial-gradient(ellipse at 0% 42%,#8a271b55,transparent 56%),#100e0e;padding-block:150px;border-bottom:1px solid #ffffff20;isolation:isolate}
+.journey-layout{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start}
+.journey-heading{position:sticky;top:135px}.journey-heading .eyebrow{color:#ec986f}
+.journey h2{font-size:clamp(65px,7vw,102px);line-height:.94;margin:30px 0}
+.journey h2 em,.journey-step h3 em{font-family:Instrument,Georgia,serif;font-weight:400;color:#ff8752;letter-spacing:-.035em}
+.journey-heading>p{max-width:360px;font-size:17px;color:#d5c3bb}
+.journey-sign{display:flex;align-items:center;gap:16px;margin-top:55px;font-size:10px;letter-spacing:.12em;color:#e2926a}
+.journey-sign svg{width:130px;height:50px;fill:none;stroke:#ff6829;stroke-width:1.5}
+.journey-steps{position:relative;padding-left:40px;border-left:1px solid #ff682941}
+.journey-step{position:relative;padding:0 0 52px;margin-bottom:45px;border-bottom:1px solid #ffffff25}
+.journey-step::before{content:'';position:absolute;left:-45px;top:7px;width:9px;height:9px;border-radius:50%;background:#ff6829;box-shadow:0 0 20px #ff682960}
+.step-number{font-size:10px;letter-spacing:.16em;color:#cfa08a}
+.journey-step h3{font-family:Barlow,Impact,sans-serif;font-size:45px;font-weight:600;line-height:1.05;letter-spacing:-.015em;margin:22px 0}
+.journey-step p{font-size:15px;line-height:1.8;max-width:430px;color:#c5b4ac}
+.journey-steps>.text-link{font-size:14px;gap:20px}.journey-step.reveal-ready{translate:0 24px}
+.attention-art{background:radial-gradient(ellipse at 15% 15%,#ff9c54,transparent 48%),linear-gradient(145deg,#fa692b,#c5351b)}
+.connection-art{background:radial-gradient(ellipse at 0% 0%,#ff9145,transparent 65%),linear-gradient(135deg,#e85226,#9c221b)}
+.v2 .manifesto{background:radial-gradient(ellipse at 0% 25%,#ff7e36,transparent 55%),radial-gradient(ellipse at 100% 90%,#9d1b1c,transparent 65%),#e64b23}
+.v2 .name-art{background:radial-gradient(ellipse at 0% 90%,#b3361d80,transparent 70%),linear-gradient(145deg,#371719,#120e0b)}
+.v2 .contact{background:radial-gradient(ellipse at 0% 0%,#fb692b,transparent 60%),radial-gradient(ellipse at 100% 100%,#7f151e,transparent 65%),#bb301d;color:#fff1e3}
+.v2 .contact h2 span{color:#ffe0c4}.v2 .contact>p{color:#ffe0c4}.v2 .contact::after{color:#ffe1c41c}
+@media(max-width:1100px){.journey-layout{gap:50px}.journey h2{font-size:76px}.journey-step h3{font-size:39px}}
+@media(max-width:700px){.v2 .header{padding-inline:16px}.scene .hero-bottom{bottom:42px}.v2 .ticker{margin-top:-18px}.journey{padding-block:85px}.journey-layout{grid-template-columns:1fr;gap:55px}.journey-heading{position:relative;top:auto}.journey h2{font-size:68px}.journey-heading>p{font-size:16px}.journey-sign{margin-top:30px}.journey-steps{padding-left:25px;margin-left:4px}.journey-step::before{left:-30px}.journey-step{padding-bottom:32px;margin-bottom:32px}.journey-step h3{font-size:39px}.journey-step p{font-size:14px}.journey-steps>.text-link{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.v2 .header{transition:none}.journey-step.reveal-ready{opacity:1;translate:none}}
+@media(max-width:700px){.floating-note{bottom:80px}}
+
+html{scroll-padding-top:110px}

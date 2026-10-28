@@ -1,0 +1,48 @@
+/* Concept 01: the identity is the poster. Scoped to the opening only. */
+.header.cover-header{color:#181411}
+.cover-header .header-contact span{color:#181411}
+.cover-header .menu{color:#181411;border-color:#18141160}
+.cover-header #mobile-nav{background:#f3eadb;color:#181411;border-color:#18141140}
+.hero.hero-poster{height:145svh;min-height:0;max-height:none;padding:0;overflow:visible;isolation:isolate;background:#fa602c;color:#181411}
+.hero-poster:after{display:none}
+.cover-stage{position:sticky;top:0;height:calc(100svh - 24px);min-height:700px;overflow:hidden;background:#fa602c;padding:0 var(--gutter)}
+.cover-statement{position:absolute;left:var(--gutter);top:155px;z-index:2;opacity:clamp(0,calc(1 - var(--hero-p,0)*7),1);transform:translateY(calc(var(--hero-p,0)*-160px))}
+.cover-statement>.tiny{font-size:9px;letter-spacing:.12em}
+.hero-poster h1{font:500 clamp(30px,3.1vw,46px)/1.1 Space,Arial,sans-serif;text-transform:none;letter-spacing:-.055em;margin:24px 0 0}
+.hero-poster h1 em{font:italic 1.36em/1 Instrument,Georgia,serif;letter-spacing:-.025em;color:#181411;display:inline-block;margin-top:4px}
+.cover-description{position:absolute;right:var(--gutter);top:205px;width:250px;opacity:clamp(0,calc(1 - var(--hero-p,0)*7),1);transform:translateY(calc(var(--hero-p,0)*-200px))}
+.cover-description>.tiny{font-size:9px;letter-spacing:.12em}
+.cover-description p{font-size:13px;line-height:1.5;margin-top:15px}
+.cover-wordmark{position:absolute;left:3%;width:94%;bottom:15%;transform:translateY(calc(var(--hero-p,0)*-80px)) scale(calc(1 + var(--hero-p,0)*.8));transform-origin:50% 75%;will-change:transform}
+.cover-wordmark img{width:100%;height:auto;max-height:44svh;object-fit:contain;object-position:center}
+.cover-footer{position:absolute;left:var(--gutter);right:var(--gutter);bottom:48px;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #18141155;padding-top:22px;z-index:3}
+.cover-footer>.tiny{font-size:8px;letter-spacing:.12em}
+.cover-explore{display:flex;gap:28px;align-items:center;font-size:13px}
+.cover-explore .arrow-icon{width:26px;height:26px;transition:translate .25s ease}
+.cover-explore:hover .arrow-icon{translate:0 5px}
+.motion-reduced .hero.hero-poster{height:100svh;min-height:700px}
+.motion-reduced .cover-stage{position:relative}
+.motion-reduced .cover-statement,.motion-reduced .cover-description,.motion-reduced .cover-wordmark{transform:none;will-change:auto}
+@media(min-width:1600px){.cover-statement{top:170px}.cover-description{top:205px}.cover-wordmark{bottom:13%}}
+@media(max-height:750px) and (min-width:701px){.cover-stage{min-height:660px}.cover-statement{top:120px}.hero-poster h1{font-size:32px;margin-top:15px}.cover-description{top:155px}.cover-wordmark{bottom:14%}.cover-wordmark img{max-height:46svh}}
+@media(max-width:1000px) and (min-width:701px){.hero-poster h1{font-size:32px}.cover-description{width:190px;top:195px}.cover-description p{font-size:12px}.cover-wordmark{bottom:20%}.cover-footer>.tiny{font-size:7px}}
+@media(max-width:700px){
+ .hero.hero-poster{height:120svh;min-height:800px}
+ .cover-stage{height:calc(100svh - 24px);min-height:680px}
+ .cover-statement{top:130px;right:var(--gutter)}
+ .hero-poster h1{font-size:clamp(25px,7.1vw,39px);line-height:1.15;margin-top:25px;letter-spacing:-.05em}
+ .hero-poster h1 em{font-size:1.25em}
+ .cover-statement>.tiny{font-size:8px}
+ .cover-description{top:auto;bottom:36%;width:190px;right:var(--gutter)}
+ .cover-description>.tiny{font-size:8px}
+ .cover-description p{font-size:12px;margin-top:10px}
+ .cover-wordmark{left:3%;width:94%;bottom:15%;transform:translateY(calc(var(--hero-p,0)*-30px)) scale(calc(1 + var(--hero-p,0)*.4))}
+ .cover-wordmark img{max-height:none}
+ .cover-footer{bottom:48px;padding-top:17px;gap:12px}
+ .cover-footer>.tiny{font-size:6px;max-width:120px}
+ .cover-footer .cover-edition{display:none}
+ .cover-explore{font-size:11px;gap:12px}
+ .cover-explore .arrow-icon{width:20px;height:20px}
+ .motion-reduced .hero.hero-poster{height:auto;min-height:0}
+}
+@media(prefers-reduced-motion:reduce){.hero.hero-poster{height:auto;min-height:0}.cover-stage{position:relative}.cover-statement,.cover-description,.cover-wordmark{transform:none!important;will-change:auto}}
